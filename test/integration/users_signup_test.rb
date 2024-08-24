@@ -16,8 +16,8 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
     assert_difference "User.count", 1 do
       post users_path, params: { user: { name: "Rails Tutorial", email: "user@valid.com", password: "hogehoge", password_confirmation: "hogehoge" } }
     end
-    assert_response 302
     follow_redirect!
     assert_template "users/show"
+    assert_not flash[:success] == ""
   end
 end
