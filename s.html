@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>Sign up | Ruby on Rails Tutorial Sample App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="Ynk5b887n_k58N7282qlUoceWN29yJEI9ynC0ZAiiFIdPJ7FAlEpYWMOGbE8WeXbIq6fMsUX9Xws3ETb6iIUbQ" />
+  
+
+  <link rel="stylesheet" href="/assets/application-e880159bf5cf9b848eea7c7ad7b5c09628bf66f73400b43cb567ce6f2925d16f.css" data-turbo-track="reload" />
+  <script type="importmap" data-turbo-track="reload">{
+  "imports": {
+    "application": "/assets/application-37f365cbecf1fa2810a8303f4b6571676fa1f9c56c248528bc14ddb857531b95.js",
+    "@hotwired/turbo-rails": "/assets/turbo.min-f309baafa3ae5ad6ccee3e7362118b87678d792db8e8ab466c4fa284dd3a4700.js",
+    "@hotwired/stimulus": "/assets/stimulus.min-d03cf1dff41d6c5698ec2c5d6a501615a7a33754dbeef8d1edd31c928d17c652.js",
+    "@hotwired/stimulus-loading": "/assets/stimulus-loading-1fc59770fb1654500044afd3f5f6d7d00800e5be36746d55b94a2963a7a228aa.js",
+    "controllers/application": "/assets/controllers/application-368d98631bccbf2349e0d4f8269afb3fe9625118341966de054759d96ea86c7e.js",
+    "controllers/hello_controller": "/assets/controllers/hello_controller-549135e8e7c683a538c3d6d517339ba470fcfb79d62f738a0a089ba41851a554.js",
+    "controllers": "/assets/controllers/index-2db729dddcc5b979110e98de4b6720f83f91a123172e87281d5a58410fc43806.js"
+  }
+}</script>
+
+<script src="/assets/es-module-shims.min-d89e73202ec09dede55fb74115af9c5f9f2bb965433de1c2446e1faa6dac2470.js" async="async" data-turbo-track="reload"></script>
+<script type="module">import "application"</script>
+</head>
+  <body>
+    <header class="navbar navbar-fixed-top navbar-inverse">
+  <div class="container">
+	<a id="logo" href="/">sample app</a>
+	<nav>
+	  <ul class="nav navbar-nav navbar-right">
+		<li><a href="/">Home</a></li>
+		<li><a href="/help">Help</a></li>
+		<li><a href="#">Log in</a></li>
+	  </ul>
+	</nav>
+  </div>
+</header>
+    <div class="container">
+      <h1>Sign up</h1>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <form action="/users" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="jRW1tq3wiyAgP-1_SbhbdFR99Dju4epLcWrrjCDEXYpwKFyP6KUVm_cWrwjwAr6iVXaYmJbZ3-BCd7MCirZUXA" autocomplete="off" />
+      <label for="user_name">Name</label>
+      <input type="text" value="taroutaro" name="user[name]" id="user_name" />
+
+      <div class="field_with_errors"><label for="user_email">Email</label></div>
+      <div class="field_with_errors"><input type="email" name="user[email]" id="user_email" /></div>
+
+      <div class="field_with_errors"><label for="user_password">Password</label></div>
+      <div class="field_with_errors"><input type="password" name="user[password]" id="user_password" /></div>
+
+      <label for="user_password_confirmation">Confirmation</label>
+      <input type="password" name="user[password_confirmation]" id="user_password_confirmation" />
+
+      <input type="submit" name="commit" value="Create my account" class="btn btn-primary" data-disable-with="Create my account" />
+</form>  </div>
+</div>
+      <footer class="footer">
+	<small>
+	  The <a href="https://railstutorial.jp/">Ruby on Rails Tutorial</a>
+	  by <a href="https://www.michaelhartl.com/">Michael Hartl</a>
+	</small>
+	<nav>
+	  <ul>
+		<li><a href="/about">About</a></li>
+		<li><a href="/contact">Contact</a></li>
+		<li><a href="https://news.railstutorial.org/">News</a></li>
+	  </ul>
+	</nav>
+  </footer>
+  
+      <code class="debug_dump">#&lt;ActionController::Parameters {&quot;user&quot;=&gt;#&lt;ActionController::Parameters {&quot;name&quot;=&gt;&quot;taroutaro&quot;} permitted: false&gt;, &quot;commit&quot;=&gt;&quot;Create my account&quot;, &quot;controller&quot;=&gt;&quot;users&quot;, &quot;action&quot;=&gt;&quot;create&quot;} permitted: false&gt;</code>
+    </div>
+  </body>
+</html>
